@@ -1,10 +1,12 @@
 import React from "react";
+import { Style } from "radium";
 
 import Carousel from "./carousel.js";
 import configStyles from "./config-styles";
 import Frame from "./frame.js";
 import Nav from "./nav.js";
 import Slide from "./slide.js";
+import styles from "./app-styles.js";
 
 export default class DriftApp extends React.Component {
   constructor(props) {
@@ -39,6 +41,7 @@ export default class DriftApp extends React.Component {
   render() {
     return (
       <Frame>
+        <Style rules={styles} />
         <Carousel
           showIndex={this.state.showIndex}
           nav={this.renderNav()}
