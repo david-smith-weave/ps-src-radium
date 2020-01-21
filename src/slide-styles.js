@@ -10,7 +10,7 @@ export default {
   },
   footer: {
     position: "absolute",
-    top: config.imageHeight,
+    top: config.imageHeight - footerHeight,
     left: 0,
     width: "100%",
     height: footerHeight,
