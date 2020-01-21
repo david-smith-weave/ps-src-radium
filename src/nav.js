@@ -15,10 +15,14 @@ function getNextStyles(props) {
 function Nav(props) {
   return (
     <div style={styles.root}>
-      <button style={getPrevStyles(props)} onClick={props.onPrevious}>
+      <button
+        key="prev"
+        style={getPrevStyles(props)}
+        onClick={props.onPrevious}
+      >
         &#10094;
       </button>
-      <button style={getNextStyles(props)} onClick={props.onNext}>
+      <button ket="next" style={getNextStyles(props)} onClick={props.onNext}>
         &#10095;
       </button>
     </div>
